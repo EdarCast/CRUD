@@ -1,0 +1,145 @@
+body{
+  margin:0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.container{
+  width:750px;
+  background:white;
+  padding:35px;
+  border-radius:14px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.3);
+  animation:fadeIn 0.5s ease;
+}
+
+h1{
+  text-align:center;
+  margin-bottom:25px;
+  color:#2c3e50;
+}
+
+/* FORM */
+
+.form{
+  display:grid;
+  grid-template-columns:1fr 2fr 1fr auto;
+  gap:12px;
+  margin-bottom:30px;
+}
+
+.form input{
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #ddd;
+  outline:none;
+  transition:0.2s;
+}
+
+.form input:focus{
+  border-color:#3498db;
+  box-shadow:0 0 5px rgba(52,152,219,0.4);
+}
+
+.form button{
+  background:#27ae60;
+  border:none;
+  color:white;
+  padding:10px 15px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:bold;
+  transition:0.2s;
+}
+
+.form button:hover{
+  background:#219150;
+  transform:scale(1.05);
+}
+
+/* TABLE */
+
+.table{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.header{
+  display:grid;
+  grid-template-columns:1fr 2fr 1fr 1fr;
+  font-weight:bold;
+  padding:12px;
+  background:#2c3e50;
+  color:white;
+  border-radius:8px;
+}
+
+.row{
+  display:grid;
+  grid-template-columns:1fr 2fr 1fr 1fr;
+  padding:12px;
+  background:#f4f6f8;
+  border-radius:8px;
+  align-items:center;
+  transition:0.2s;
+}
+
+.row:hover{
+  background:#e9eef3;
+  transform:scale(1.01);
+}
+
+/* BUTTONS */
+
+.actions{
+  display:flex;
+  gap:8px;
+}
+
+.edit{
+  background:#f39c12;
+  border:none;
+  color:white;
+  padding:6px 12px;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:bold;
+  transition:0.2s;
+}
+
+.edit:hover{
+  background:#d68910;
+}
+
+.delete{
+  background:#e74c3c;
+  border:none;
+  color:white;
+  padding:6px 12px;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:bold;
+  transition:0.2s;
+}
+
+.delete:hover{
+  background:#c0392b;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(10px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
